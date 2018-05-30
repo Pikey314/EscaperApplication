@@ -1,5 +1,6 @@
 package View.Buttons;
 
+import Controller.AdminLoginButtonController;
 import View.MainFrame;
 
 import javax.swing.*;
@@ -20,7 +21,8 @@ public class AdminLoginButton extends JButton {
         setBackground(Color.white);
         setFont(new Font("Arial", Font.BOLD, 40));
         setPreferredSize(new Dimension(LOGIN_PANEL_WIDTH,LOGIN_PANEL_HEIGHT/3));
-
+        AdminLoginButtonController albc = new AdminLoginButtonController(this.properMainFrame);
+        addActionListener(albc);
 
     }
 }

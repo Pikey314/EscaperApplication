@@ -1,5 +1,8 @@
 package View.Buttons;
 
+import Controller.HomeButtonController;
+import View.MainFrame;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
@@ -11,9 +14,11 @@ import static View.Panels.BottomNavigationPanel.BOTTOM_PANEL_HEIGHT;
 import static View.Panels.BottomNavigationPanel.BOTTOM_PANEL_WIDTH;
 
 public class HomeButton extends JButton {
+    private MainFrame properMainFrame;
 
     public HomeButton(){
         super();
+        this.properMainFrame = properMainFrame;
         setPreferredSize(new Dimension(BOTTOM_PANEL_WIDTH/2-5,BOTTOM_PANEL_HEIGHT));
         BufferedImage myPicture = null;
         try {
@@ -24,10 +29,9 @@ public class HomeButton extends JButton {
         ImageIcon imageIcon = new ImageIcon(myPicture);
         setIcon(imageIcon);
         setBackground(Color.black);
-
+        HomeButtonController hbc = new HomeButtonController(this.properMainFrame);
+        addActionListener(hbc);
     }
 
-    public void setActionListerer(){
 
-    }
 }

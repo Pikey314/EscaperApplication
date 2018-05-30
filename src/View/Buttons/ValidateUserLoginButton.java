@@ -15,18 +15,19 @@ public class ValidateUserLoginButton extends JButton {
     private MainFrame properMainFrame;
     private JTextField username;
     private JTextField password;
+    private String privilige;
 
-
-    public ValidateUserLoginButton(MainFrame properMainFrame, JTextField username, JTextField password){
+    public ValidateUserLoginButton(MainFrame properMainFrame, JTextField username, JTextField password, String privilige){
         super();
         this.properMainFrame = properMainFrame;
         this.username = username;
         this.password = password;
+        this.privilige = privilige;
         setText("Log In");
         setBackground(Color.green);
         setFont(new Font("Arial", Font.BOLD, 40));
 
-        ValidateUserLoginController vulc = new ValidateUserLoginController(this.properMainFrame,this.username,this.password);
+        ValidateUserLoginController vulc = new ValidateUserLoginController(this.properMainFrame,this.username,this.password, this.privilige);
         addActionListener(vulc);
 
     }

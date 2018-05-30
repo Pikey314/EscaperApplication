@@ -1,7 +1,6 @@
 package Model;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Scanner;
 
 public class User {
@@ -36,6 +35,20 @@ public class User {
         }
         sc.close();
         throw new RuntimeException("Login Problem");
+    }
+
+    public void register(String username, String password, String name, String surname, String privilige){
+        Writer output;
+        String newUserData = username+";"+password+";"+name+";"+surname+";"+privilige;
+        try {
+            output = new BufferedWriter(new FileWriter("src\\Model\\UserDataBase.txt",true));
+            ((BufferedWriter) output).newLine();
+            output.append(newUserData);
+            output.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 
