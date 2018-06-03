@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
         setSize(APPLICATION_WIDTH,APPLICATION_HEIGHT);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
-        JPanel bottomNavigationPanel = new BottomNavigationPanel();
+        JPanel bottomNavigationPanel = new BottomNavigationPanel(this);
         add(bottomNavigationPanel,BorderLayout.SOUTH);
         JPanel welcomePanel = new WelcomePanel(this);
         add(welcomePanel,BorderLayout.CENTER);

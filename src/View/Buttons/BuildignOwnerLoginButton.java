@@ -17,9 +17,10 @@ public class BuildignOwnerLoginButton extends JButton {
     public BuildignOwnerLoginButton(MainFrame properMainFrame){
         super();
         this.properMainFrame = properMainFrame;
-        setText("B. Owner Log In");
-        setBackground(Color.white);
+        setText("Building Owner Panel");
+        setBackground(Color.RED);
         setFont(new Font("Arial", Font.BOLD, 40));
+        setForeground(Color.WHITE);
         setPreferredSize(new Dimension(LOGIN_PANEL_WIDTH,LOGIN_PANEL_HEIGHT/3));
         BuildingOwnerLoginButtonController bowlbc = new BuildingOwnerLoginButtonController(this.properMainFrame);
         addActionListener(bowlbc);

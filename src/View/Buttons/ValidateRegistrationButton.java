@@ -24,7 +24,7 @@ public class ValidateRegistrationButton extends JButton {
         this.role = role;
         this.name = name;
         this.surename = surename;
-        setText("Register");
+        setText("Sign up");
         setBackground(Color.ORANGE);
         setFont(new Font("Arial", Font.BOLD, 40));
 

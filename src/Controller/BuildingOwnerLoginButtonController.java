@@ -19,7 +19,6 @@ public class BuildingOwnerLoginButtonController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        System.out.println("Hello");
         JPanel ownerLoginPanel = new BuildingOwnerLoginPanel(this.properMainFrame);
         properMainFrame.setNewPanel(ownerLoginPanel);
 

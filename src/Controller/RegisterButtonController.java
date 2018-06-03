@@ -21,7 +21,6 @@ public class RegisterButtonController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        System.out.println("Hello");
         JPanel regitrationPanel = new RegistrationPanel(this.properMainFrame,this.admin);
         properMainFrame.setNewPanel(regitrationPanel);
 

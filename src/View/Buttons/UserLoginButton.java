@@ -18,8 +18,9 @@ public class UserLoginButton extends JButton {
     public UserLoginButton(MainFrame properMainFrame){
         super();
         this.properMainFrame = properMainFrame;
-        setText("User Log In");
-        setBackground(Color.white);
+        setText("User Panel");
+        setBackground(Color.GREEN);
+        setForeground(Color.white);
         setFont(new Font("Arial", Font.BOLD, 40));
         setPreferredSize(new Dimension(LOGIN_PANEL_WIDTH,LOGIN_PANEL_HEIGHT/3));
         UserLoginButtonController ulbc = new UserLoginButtonController(this.properMainFrame);

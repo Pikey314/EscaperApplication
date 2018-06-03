@@ -21,6 +21,6 @@ public class EscapeRootPanel extends JPanel {
 
         this.properMainFrame = properMainFrame;
         setPreferredSize(new Dimension(LOGIN_PANEL_WIDTH, LOGIN_PANEL_HEIGHT));
-        setBackground(Color.RED);
+        setBackground(Color.BLACK);
     }
 }

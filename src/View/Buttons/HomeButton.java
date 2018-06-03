@@ -16,10 +16,10 @@ import static View.Panels.BottomNavigationPanel.BOTTOM_PANEL_WIDTH;
 public class HomeButton extends JButton {
     private MainFrame properMainFrame;
 
-    public HomeButton(){
+    public HomeButton(MainFrame properMainFrame){
         super();
         this.properMainFrame = properMainFrame;
-        setPreferredSize(new Dimension(BOTTOM_PANEL_WIDTH/2-5,BOTTOM_PANEL_HEIGHT));
+        setPreferredSize(new Dimension(BOTTOM_PANEL_WIDTH,BOTTOM_PANEL_HEIGHT));
         BufferedImage myPicture = null;
         try {
             myPicture = ImageIO.read(this.getClass().getResource("home-icon.png"));

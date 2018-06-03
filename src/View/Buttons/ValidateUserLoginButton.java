@@ -23,7 +23,7 @@ public class ValidateUserLoginButton extends JButton {
         this.username = username;
         this.password = password;
         this.privilige = privilige;
-        setText("Log In");
+        setText("Sign In");
         setBackground(Color.green);
         setFont(new Font("Arial", Font.BOLD, 40));
 

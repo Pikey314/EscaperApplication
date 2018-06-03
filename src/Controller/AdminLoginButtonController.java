@@ -19,7 +19,6 @@ public class AdminLoginButtonController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        System.out.println("Hello");
         JPanel adminLoginPanel = new AdminLoginPanel(this.properMainFrame);
         properMainFrame.setNewPanel(adminLoginPanel);
 

@@ -19,7 +19,6 @@ public class StartButtonController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        System.out.println("Hello");
         JPanel loginPanel = new LoginPanel(this.properMainFrame);
         properMainFrame.setNewPanel(loginPanel);
 

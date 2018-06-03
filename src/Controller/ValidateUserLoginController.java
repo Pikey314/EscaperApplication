@@ -28,7 +28,6 @@ public class ValidateUserLoginController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        System.out.println("Hello");
         User newUser = new User();
         String[] userData = newUser.login(this.username.getText(),this.password.getText(),this.privilige);
         if (this.privilige.equals("U")) {
