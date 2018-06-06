@@ -19,8 +19,7 @@ public class GetEscapeRootButtonController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        JPanel escapeRootPanel = new EscapeRootPanel(this.properMainFrame);
-        properMainFrame.setNewPanel(escapeRootPanel);
+
         MainMap mainMap = new MainMap();
         mainMap.showMap();
 

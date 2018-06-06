@@ -24,7 +24,7 @@ public class MapDrawer {
 	public MapDrawer(Map m){
 		map = m; 
 	    frame = new JFrame();
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		frame.setSize(600, 1000);
 		frame.setPreferredSize(new Dimension(600, 1000));
 		frame.setResizable(false);
