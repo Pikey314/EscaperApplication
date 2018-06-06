@@ -18,6 +18,7 @@ public class MapDrawer {
 	private JFrame frame;
 	private Map map;
 	private mxGraph graph = null;
+	public static String imageName;
 	
 	
 	public MapDrawer(Map m){
@@ -88,7 +89,7 @@ public class MapDrawer {
 		
 		mxGraphComponent graphComponent = new mxGraphComponent(graph);
 		graphComponent.getViewport().setOpaque(true);
-		graphComponent.setBackgroundImage(new ImageIcon("plan1.png"));
+		graphComponent.setBackgroundImage(new ImageIcon(imageName));
 		
 		// Mouse listener
 		graphComponent.getGraphControl().addMouseListener(new MouseAdapter()

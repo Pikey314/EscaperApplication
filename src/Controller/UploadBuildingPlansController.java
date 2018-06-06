@@ -1,6 +1,7 @@
 package Controller;
 
 import Model.Graph.MainMap;
+import Model.Graph.MapDrawer;
 import View.MainFrame;
 
 import javax.swing.*;
@@ -25,7 +26,9 @@ public class UploadBuildingPlansController  implements ActionListener {
         int val = fc.showOpenDialog(this.properMainFrame);
         if (val == JFileChooser.APPROVE_OPTION){
             File file = fc.getSelectedFile();
+            MapDrawer.imageName = "plan1.png";
             MainMap.file1 = file.getName();
+
         }
 
     }
