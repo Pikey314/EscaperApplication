@@ -5,3 +5,4 @@ set username here;set password here;input name here;input surname here;U
 b;b;Building;Owner;B
 jose;cj;Michaela;Hroncova;U
 building;owner;Big;Smoke;B
+a;b;Ala;Ala;B

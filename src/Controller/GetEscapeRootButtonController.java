@@ -1,8 +1,8 @@
 package Controller;
 
+import Model.Graph.MainMap;
 import View.MainFrame;
 import View.Panels.EscapeRootPanel;
-import View.Panels.UserLoginPanel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -21,6 +21,9 @@ public class GetEscapeRootButtonController implements ActionListener {
     public void actionPerformed(ActionEvent event) {
         JPanel escapeRootPanel = new EscapeRootPanel(this.properMainFrame);
         properMainFrame.setNewPanel(escapeRootPanel);
+        MainMap mainMap = new MainMap();
+        mainMap.showMap();
+
 
         //HERE IS ACTION LISTENER FOR A BUTTON WHICH AFTER PRESSING WILL SHOW ESCAPE ROOT
 
