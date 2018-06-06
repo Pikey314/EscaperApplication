@@ -1,9 +1,7 @@
 package Controller;
 
-import Model.User;
+import Model.Graph.MainMap;
 import View.MainFrame;
-import View.Panels.LoginPanel;
-import View.Panels.UserLoginPanel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -27,7 +25,7 @@ public class UploadBuildingPlansController  implements ActionListener {
         int val = fc.showOpenDialog(this.properMainFrame);
         if (val == JFileChooser.APPROVE_OPTION){
             File file = fc.getSelectedFile();
-            System.out.println("1Opening: " + file.getName());
+            MainMap.file1 = file.getName();
         }
 
     }

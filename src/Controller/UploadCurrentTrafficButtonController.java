@@ -1,7 +1,7 @@
 package Controller;
 
+import Model.Graph.MainMap;
 import View.MainFrame;
-import View.Panels.UserLoginPanel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -30,7 +30,7 @@ public class UploadCurrentTrafficButtonController  implements ActionListener {
         int val = fc.showOpenDialog(this.properMainFrame);
         if (val == JFileChooser.APPROVE_OPTION){
             File file = fc.getSelectedFile();
-            System.out.println("2Opening: " + file.getName());
+            MainMap.file2 = file.getName();
         }
 
     }
